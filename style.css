@@ -21,6 +21,10 @@
   background-color: rgba(249, 249, 247, 0.12) !important;
 }
 
+.bg-icons-imp {
+  background-color: rgba(249, 249, 247, 0.12) !important;
+}
+
 .main-txt-c {
   color: var(--tx-brand) !important;
 }

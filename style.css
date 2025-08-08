@@ -8,6 +8,9 @@
   /* Text Color */
   --tx-brand: #474747;
   --tx-nav: #2c2f24;
+  --tx-whitish: #f9f9f7;
+  --tx-maroon: #ad343e;
+  --tx-greyish: #dbdfd0;
 
   /* Border */
   --br-outline: #2c2f24;
@@ -47,4 +50,24 @@
 
 .bg-maroon {
   background-color: var(--bg-maroon);
+}
+
+.rounded-12 {
+  border-radius: 12px !important;
+}
+
+.whitish-txt {
+  color: var(--tx-whitish);
+}
+
+.bg-div {
+  background-color: var(--bg-icons) !important;
+}
+
+.txt-maroon {
+  color: var(--tx-maroon);
+}
+
+.txt-greyish {
+  color: var(--tx-greyish);
 }

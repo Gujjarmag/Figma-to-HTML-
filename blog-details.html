@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>Homepage</title>
+    <title>Blog Details</title>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -77,7 +77,7 @@
             </a>
             <a
               class="navbar-brand main-txt-c fs-1 playfair-display-gen fw-semibold st-italic"
-              href="./index.html"
+              href="#"
               >Bistro Bliss</a
             >
           </div>
@@ -108,7 +108,7 @@
               </li>
               <li class="nav-item">
                 <a
-                  class="nav-link txt-nav active rounded-pill mx-2 px-3"
+                  class="nav-link txt-nav rounded-pill mx-2 px-3"
                   href="./about.html"
                   >About</a
                 >
@@ -120,10 +120,25 @@
                   >Menu</a
                 >
               </li>
-              <li class="nav-item">
-                <a class="nav-link txt-nav rounded-pill mx-2 px-3" href="#"
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link txt-nav active rounded-pill mx-2 px-3"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                  href="#"
                   >Pages</a
                 >
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item" href="./blog.html">Blog</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="./blog-details.html"
+                      >Blog Details</a
+                    >
+                  </li>
+                </ul>
               </li>
               <li class="nav-item">
                 <a
@@ -143,8 +158,91 @@
         </div>
       </nav>
 
+      <!-- Blogs & Articles -->
+      <div class="container-fluid bg-div py-6">
+        <div class="container">
+          <div class="row align-items-center mb-5 text-center">
+            <div class="col-lg-12 d-flex flex-column align-items-center">
+              <div class="w-50">
+                <h1 class="mb-3 playfair-display-gen fs-55 fw-medium">
+                  Read More Articles
+                </h1>
+                <p>
+                  We consider all the drivers of change gives you the components
+                  you need to change to create a truly happens.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="row align-items-stretch">
+            <div class="col-lg-3">
+              <div class="card border-0">
+                <img
+                  src="./assets/Blog-2.png"
+                  alt="fries"
+                  class="rounded-top-12"
+                />
+                <div class="card-body">
+                  <p class="fw-medium tx-dates pt-3 fs-7">January 3, 2023</p>
+                  <p class="card-title fw-medium fs-5">
+                    How to prepare a delicious gluten free sushi
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3">
+              <div class="card border-0">
+                <img
+                  src="./assets/Blog-3.png"
+                  alt="chicken wings"
+                  class="rounded-top-12"
+                />
+                <div class="card-body">
+                  <p class="fw-medium tx-dates pt-3 fs-7">January 3, 2023</p>
+                  <p class="card-title fw-medium fs-5">
+                    Exclusive baking lessons from the pastry king
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3">
+              <div class="card border-0">
+                <img
+                  src="./assets/Blog-4.png"
+                  alt="pastries"
+                  class="rounded-top-12"
+                />
+                <div class="card-body">
+                  <p class="fw-medium tx-dates pt-3 fs-7">January 3, 2023</p>
+                  <p class="card-title fw-medium fs-5">
+                    How to prepare the perfect fries in an air fryer
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3">
+              <div class="card border-0">
+                <img
+                  src="./assets/Blog-5.png"
+                  class="card-img-top"
+                  alt="pizza"
+                  class="rounded-top-12"
+                />
+                <div class="card-body">
+                  <p class="fw-medium tx-dates pt-3 fs-7">January 3, 2023</p>
+                  <p class="card-title fw-medium fs-5">
+                    How to prepare delicious chicken tenders
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Bolgs & Articles End -->
+
       <!-- Footer -->
-      <div class="container-fluid py-6 bg-div-dark">
+      <div class="site-footer container-fluid py-6 bg-div-dark">
         <div class="container">
           <footer class="row">
             <!-- Col-1 -->
@@ -195,13 +293,15 @@
             <div class="col-lg-2 ps-5">
               <p class="text-white mb-5 fw-bold">Pages</p>
               <ul class="nav flex-column txt-greyish gap-3">
-                <li class="nav-item mb-2">Home</li>
-                <li class="nav-item mb-2">About</li>
-                <li class="nav-item mb-2">Menu</li>
-                <li class="nav-item mb-2">Pricing</li>
-                <li class="nav-item mb-2">Blog</li>
-                <li class="nav-item mb-2">Contact</li>
-                <li class="nav-item mb-2">Delivery</li>
+                <li class="nav-item mb-2"><a href="./index.html">Home</a></li>
+                <li class="nav-item mb-2"><a href="./about.html">About</a></li>
+                <li class="nav-item mb-2"><a href="./menu.html">Menu</a></li>
+                <li class="nav-item mb-2"><a href="#"></a>Pricing</li>
+                <li class="nav-item mb-2"><a href="./blog.html">Blog</a></li>
+                <li class="nav-item mb-2">
+                  <a href="./contact.html">Contact</a>
+                </li>
+                <li class="nav-item mb-2"><a href="#">Delivery</a></li>
               </ul>
             </div>
 
@@ -266,5 +366,10 @@
       </div>
       <!-- Footer End -->
     </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>

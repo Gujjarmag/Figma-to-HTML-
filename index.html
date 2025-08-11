@@ -120,10 +120,25 @@
                   >Menu</a
                 >
               </li>
-              <li class="nav-item">
-                <a class="nav-link txt-nav rounded-pill mx-2 px-3" href="#"
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link txt-nav rounded-pill mx-2 px-3"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                  href="#"
                   >Pages</a
                 >
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item" href="./blog.html">Blog</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="./blog-details.html"
+                      >Blog Details</a
+                    >
+                  </li>
+                </ul>
               </li>
               <li class="nav-item">
                 <a
@@ -350,7 +365,7 @@
                 warmth and dedication, strives to make every visit an
                 unforgettable event.
               </p>
-              <button class="btn border rounded-pill br-outline p-3 px-4">
+              <button class="btn rounded-pill br-outline p-3 px-4 mt-4">
                 More About Us
               </button>
             </div>
@@ -439,7 +454,7 @@
 
       <!-- Customer Reviews -->
       <div class="container-fluid mb-5 py-6">
-        <div class="container">
+        <div class="container px-5">
           <div class="p-3 pb-md-4 mx-auto text-center">
             <h1
               class="display-4 fw-normal txt-nav playfair-display-gen fw-medium mb-5"
@@ -447,9 +462,11 @@
               What Our Customers Say
             </h1>
           </div>
-          <div class="row row-cols-1 row-cols-md-3 mb-3">
-            <div class="col">
-              <div class="card mb-4 rounded py-5 px-4 bg-div">
+          <div
+            class="row row-cols-1 row-cols-md-3 mb-3 d-flex align-items-stretch"
+          >
+            <div class="col d-flex">
+              <div class="card mb-4 rounded py-5 px-4 bg-div h-100">
                 <h4 class="txt-maroon fw-bold">“The best restaurant”</h4>
                 <p class="fs-18 mt-4">
                   Last night, we dined at place and were simply blown away. From
@@ -466,8 +483,8 @@
                 </div>
               </div>
             </div>
-            <div class="col">
-              <div class="card mb-4 rounded py-5 px-4 bg-div">
+            <div class="col d-flex">
+              <div class="card mb-4 rounded py-5 px-4 bg-div h-100">
                 <h4 class="txt-maroon fw-bold">“Simply delicious”</h4>
                 <p class="fs-18 mt-4">
                   Place exceeded my expectations on all fronts. The ambiance was
@@ -486,7 +503,7 @@
               </div>
             </div>
             <div class="col">
-              <div class="card mb-4 rounded py-5 px-4 bg-div">
+              <div class="card mb-4 rounded py-5 px-4 bg-div h-100">
                 <h4 class="txt-maroon fw-bold">“One of a kind restaurant”</h4>
                 <p class="fs-18 mt-4">
                   The culinary experience at place is first to none. The
@@ -525,8 +542,8 @@
             </div>
           </div>
           <div class="row align-items-stretch">
-            <div class="col-lg-6">
-              <div class="card border-0">
+            <div class="col-lg-6 d-flex">
+              <div class="card border-0 flex-fill">
                 <img
                   src="./assets/Blog-1.png"
                   alt="beef burger"
@@ -534,10 +551,10 @@
                 />
                 <div class="card-body p-5">
                   <p class="fw-medium tx-dates">January 3, 2023</p>
-                  <h6 class="card-title mb-3 fw-medium">
+                  <p class="card-title mb-3 fw-medium fs-5">
                     The secret tips & tricks to prepare a perfect burger & pizza
                     for our customers
-                  </h6>
+                  </p>
                   <p class="card-text tx-dgrey">
                     Lorem ipsum dolor sit amet consectetur of a adipiscing
                     elitilmim semper adipiscing massa gravida nisi cras enim
@@ -548,8 +565,8 @@
             </div>
 
             <!-- 2x2 Grid -->
-            <div class="col-lg-6">
-              <div class="row g-4">
+            <div class="col-lg-6 d-flex">
+              <div class="row g-4 flex-fill">
                 <div class="col-lg-6">
                   <div class="card border-0">
                     <img
@@ -557,11 +574,13 @@
                       alt="fries"
                       class="rounded-top-12"
                     />
-                    <div class="card-body">
-                      <p class="fw-medium tx-dates pt-3">January 3, 2023</p>
-                      <h6 class="card-title fw-medium">
+                    <div class="card-body ps-4 pe-5">
+                      <p class="fw-medium tx-dates pt-3 fs-7">
+                        January 3, 2023
+                      </p>
+                      <p class="card-title fw-medium fs-5">
                         How to prepare the perfect french fries in an air fryer
-                      </h6>
+                      </p>
                     </div>
                   </div>
                 </div>
@@ -572,11 +591,13 @@
                       alt="chicken wings"
                       class="rounded-top-12"
                     />
-                    <div class="card-body">
-                      <p class="fw-medium tx-dates pt-3">January 3, 2023</p>
-                      <h6 class="card-title fw-medium">
+                    <div class="card-body ps-4 pe-5">
+                      <p class="fw-medium tx-dates pt-3 fs-7">
+                        January 3, 2023
+                      </p>
+                      <p class="card-title fw-medium fs-5">
                         How to prepare delicious chicken tenders
-                      </h6>
+                      </p>
                     </div>
                   </div>
                 </div>
@@ -587,11 +608,13 @@
                       alt="pastries"
                       class="rounded-top-12"
                     />
-                    <div class="card-body">
-                      <p class="fw-medium tx-dates pt-3">January 3, 2023</p>
-                      <h6 class="card-title fw-medium">
+                    <div class="card-body ps-4 pe-5">
+                      <p class="fw-medium tx-dates pt-3 fs-7">
+                        January 3, 2023
+                      </p>
+                      <p class="card-title fw-medium fs-5">
                         7 delicious cheesecake recipes you can prepare
-                      </h6>
+                      </p>
                     </div>
                   </div>
                 </div>
@@ -603,11 +626,13 @@
                       alt="pizza"
                       class="rounded-top-12"
                     />
-                    <div class="card-body">
-                      <p class="fw-medium tx-dates pt-3">January 3, 2023</p>
-                      <h6 class="card-title fw-medium">
+                    <div class="card-body ps-4 pe-5">
+                      <p class="fw-medium tx-dates pt-3 fs-7">
+                        January 3, 2023
+                      </p>
+                      <p class="card-title fw-medium fs-5">
                         5 great pizza restaurants you should visit this city
-                      </h6>
+                      </p>
                     </div>
                   </div>
                 </div>
@@ -619,7 +644,7 @@
       <!-- Bolgs & Articles End -->
 
       <!-- Footer -->
-      <div class="container-fluid py-6 bg-div-dark">
+      <div class="site-footer container-fluid py-6 bg-div-dark">
         <div class="container">
           <footer class="row">
             <!-- Col-1 -->
@@ -670,13 +695,15 @@
             <div class="col-lg-2 ps-5">
               <p class="text-white mb-5 fw-bold">Pages</p>
               <ul class="nav flex-column txt-greyish gap-3">
-                <li class="nav-item mb-2">Home</li>
-                <li class="nav-item mb-2">About</li>
-                <li class="nav-item mb-2">Menu</li>
-                <li class="nav-item mb-2">Pricing</li>
-                <li class="nav-item mb-2">Blog</li>
-                <li class="nav-item mb-2">Contact</li>
-                <li class="nav-item mb-2">Delivery</li>
+                <li class="nav-item mb-2"><a href="./index.html">Home</a></li>
+                <li class="nav-item mb-2"><a href="./about.html">About</a></li>
+                <li class="nav-item mb-2"><a href="./menu.html">Menu</a></li>
+                <li class="nav-item mb-2"><a href="#"></a>Pricing</li>
+                <li class="nav-item mb-2"><a href="./blog.html">Blog</a></li>
+                <li class="nav-item mb-2">
+                  <a href="./contact.html">Contact</a>
+                </li>
+                <li class="nav-item mb-2"><a href="#">Delivery</a></li>
               </ul>
             </div>
 
@@ -741,5 +768,10 @@
       </div>
       <!-- Footer End -->
     </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>

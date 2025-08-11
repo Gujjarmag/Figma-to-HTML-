@@ -21,6 +21,7 @@
 
   /* Border */
   --br-outline: #2c2f24;
+  --br-btn-outline: #dbdfd0;
 
   /* Break Line */
   --bl-dgrey: #414536;
@@ -28,6 +29,11 @@
 
 body {
   font-family: "DM Sans", serif;
+}
+
+.site-footer .txt-greyish a {
+  color: var(--tx-greyish);
+  text-decoration: none;
 }
 
 .nav-link.active {
@@ -43,6 +49,10 @@ body {
 
 .br-outline {
   border: 1.5px solid var(--br-outline) !important;
+}
+
+.br-btn-outline {
+  border: 1.5px solid var(--br-btn-outline) !important;
 }
 
 .py-6 {
@@ -119,6 +129,10 @@ body {
 }
 
 /* TEXT SIZE */
+.fs-7 {
+  font-size: 14px;
+}
+
 .fs-55 {
   font-size: 55px;
 }

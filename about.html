@@ -77,7 +77,7 @@
             </a>
             <a
               class="navbar-brand main-txt-c fs-1 playfair-display-gen fw-semibold st-italic"
-              href="./index.html"
+              href="#"
               >Bistro Bliss</a
             >
           </div>
@@ -120,10 +120,25 @@
                   >Menu</a
                 >
               </li>
-              <li class="nav-item">
-                <a class="nav-link txt-nav rounded-pill mx-2 px-3" href="#"
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link txt-nav rounded-pill mx-2 px-3"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                  href="#"
                   >Pages</a
                 >
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item" href="./blog.html">Blog</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="./blog-details.html"
+                      >Blog Details</a
+                    >
+                  </li>
+                </ul>
               </li>
               <li class="nav-item">
                 <a
@@ -221,8 +236,82 @@
       </div>
       <!-- Hero Section End-->
 
+      <!-- Customer Reviews -->
+      <div class="container-fluid mb-5 py-6">
+        <div class="container px-5">
+          <div class="p-3 pb-md-4 mx-auto text-center">
+            <h1
+              class="display-4 fw-normal txt-nav playfair-display-gen fw-medium mb-5"
+            >
+              What Our Customers Say
+            </h1>
+          </div>
+          <div
+            class="row row-cols-1 row-cols-md-3 mb-3 d-flex align-items-stretch"
+          >
+            <div class="col d-flex">
+              <div class="card mb-4 rounded py-5 px-4 bg-div h-100">
+                <h4 class="txt-maroon fw-bold">“The best restaurant”</h4>
+                <p class="fs-18 mt-4">
+                  Last night, we dined at place and were simply blown away. From
+                  the moment we stepped in, we were enveloped in an inviting
+                  atmosphere and greeted with warm smiles.
+                </p>
+                <hr class="my-3 txt-greyish" />
+                <div class="d-flex align-items-center">
+                  <img src="./assets/Customer-1.png" alt="" class="me-3" />
+                  <div>
+                    <p class="mb-0 fw-semibold">Sophire Robson</p>
+                    <p class="mb-0">Los Angeles, CA</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col d-flex">
+              <div class="card mb-4 rounded py-5 px-4 bg-div h-100">
+                <h4 class="txt-maroon fw-bold">“Simply delicious”</h4>
+                <p class="fs-18 mt-4">
+                  Place exceeded my expectations on all fronts. The ambiance was
+                  cozy and relaxed, making it a perfect venue for our
+                  anniversary dinner. Each dish was prepared and beautifully
+                  presented.
+                </p>
+                <hr class="my-3 txt-greyish" />
+                <div class="d-flex align-items-center">
+                  <img src="./assets/Customer-2.png" alt="" class="me-3" />
+                  <div>
+                    <p class="mb-0 fw-semibold">Matt Cannon</p>
+                    <p class="mb-0">San Diego, CA</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col d-flex">
+              <div class="card mb-4 rounded py-5 px-4 bg-div h-100">
+                <h4 class="txt-maroon fw-bold">“One of a kind restaurant”</h4>
+                <p class="fs-18 mt-4">
+                  The culinary experience at place is first to none. The
+                  atmosphere is vibrant, the food - nothing short of
+                  extraordinary. The food was the highlight of our evening.
+                  Highly recommended.
+                </p>
+                <hr class="my-3 txt-greyish" />
+                <div class="d-flex align-items-center">
+                  <img src="./assets/Customer-3.png" alt="" class="me-3" />
+                  <div>
+                    <p class="mb-0 fw-semibold">Andy Smith</p>
+                    <p class="mb-0">San Francisco, CA</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Customer Revies End -->
+
       <!-- Footer -->
-      <div class="container-fluid py-6 bg-div-dark">
+      <div class="site-footer container-fluid py-6 bg-div-dark">
         <div class="container">
           <footer class="row">
             <!-- Col-1 -->
@@ -273,13 +362,15 @@
             <div class="col-lg-2 ps-5">
               <p class="text-white mb-5 fw-bold">Pages</p>
               <ul class="nav flex-column txt-greyish gap-3">
-                <li class="nav-item mb-2">Home</li>
-                <li class="nav-item mb-2">About</li>
-                <li class="nav-item mb-2">Menu</li>
-                <li class="nav-item mb-2">Pricing</li>
-                <li class="nav-item mb-2">Blog</li>
-                <li class="nav-item mb-2">Contact</li>
-                <li class="nav-item mb-2">Delivery</li>
+                <li class="nav-item mb-2"><a href="./index.html">Home</a></li>
+                <li class="nav-item mb-2"><a href="./about.html">About</a></li>
+                <li class="nav-item mb-2"><a href="./menu.html">Menu</a></li>
+                <li class="nav-item mb-2"><a href="#"></a>Pricing</li>
+                <li class="nav-item mb-2"><a href="./blog.html">Blog</a></li>
+                <li class="nav-item mb-2">
+                  <a href="./contact.html">Contact</a>
+                </li>
+                <li class="nav-item mb-2"><a href="#">Delivery</a></li>
               </ul>
             </div>
 
@@ -344,5 +435,10 @@
       </div>
       <!-- Footer End -->
     </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>

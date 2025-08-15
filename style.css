@@ -7,6 +7,7 @@
   --bg-maroon: #ad343e;
   --bg-div: #f9f9f7;
   --bg-div-dark: #474747;
+  --bg-white-col: #ffffff;
 
   /* Text Color */
   --tx-brand: #474747;
@@ -18,10 +19,12 @@
   --tx-dgrey: #414536;
   --tx-date: #737865;
   --tx-icon: #474747;
+  --placeholder-color: #737865;
 
   /* Border */
   --br-outline: #2c2f24;
   --br-btn-outline: #dbdfd0;
+  --br-line-rect: #f9f9f7;
 
   /* Break Line */
   --bl-dgrey: #414536;
@@ -29,6 +32,63 @@
 
 body {
   font-family: "DM Sans", serif;
+}
+
+::placeholder {
+  font-size: 16px;
+  color: var(--placeholder-color) !important;
+}
+
+#totalPerson {
+  color: var(--tx-nav); /* change this to your desired color */
+}
+
+#dateInput {
+  color: var(--tx-nav); /* your desired text color */
+}
+
+.bg-maroon:hover {
+  background-color: maroon !important; /* prevent color change */
+  color: white !important; /* keep text visible */
+  opacity: 1 !important; /* stop fade effect */
+}
+
+#message {
+  resize: none;
+}
+
+.rect-top {
+  width: 220px;
+  height: 90px;
+}
+
+.rect-middle {
+  width: 260px;
+  height: 90px;
+}
+
+.rect-bottom {
+  width: 230px;
+  height: 90px;
+}
+
+.rect-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  border-radius: 12px;
+  border: 1px solid var(--br-line-rect);
+}
+
+/* Responsive adjustment */
+@media (max-width: 768px) {
+  .rect-top,
+  .rect-middle,
+  .rect-bottom {
+    width: 80%; /* shrink proportionally on tablets/mobiles */
+    height: 70px; /* optional: reduce height slightly */
+  }
 }
 
 .site-footer .txt-greyish a {
@@ -45,6 +105,14 @@ body {
   height: auto; /* maintain aspect ratio */
   max-width: 100%; /* so it never overflows the container */
   border-radius: 0.75rem; /* same as your rounded-12 */
+}
+
+.br-line {
+  border: 1px solid var(--br-line-rect);
+}
+
+.br-br-inner {
+  box-shadow: inset 0 0 0 1px var(--br-line-rect);
 }
 
 .br-outline {
@@ -89,6 +157,10 @@ body {
 }
 
 /* TEXT COLOR */
+.txt-col-plachor {
+  color: var(--placeholder-color);
+}
+
 .tx-icons {
   color: var(--tx-icon);
 }
@@ -128,6 +200,11 @@ body {
   color: var(--tx-dgrey);
 }
 
+/* PADDING */
+.pb-as-req {
+  padding-bottom: 200px; /* space for form overlap */
+}
+
 /* TEXT SIZE */
 .fs-7 {
   font-size: 14px;
@@ -135,6 +212,18 @@ body {
 
 .fs-55 {
   font-size: 55px;
+}
+
+@media (max-width: 768px) {
+  .fs-55 {
+    font-size: 36px; /* scale down for tablets */
+  }
+}
+
+@media (max-width: 576px) {
+  .fs-55 {
+    font-size: 28px; /* scale down for phones */
+  }
 }
 
 .fs-18 {
@@ -178,12 +267,20 @@ body {
   border-radius: 12px !important;
 }
 
+.rounded-16 {
+  border-radius: 16px !important;
+}
+
 .rounded-top-12 {
   border-top-left-radius: 12px !important;
   border-top-right-radius: 12px !important;
 }
 
 /* BACKGROUND */
+.bg-white-col {
+  background-color: var(--bg-white-col) !important;
+}
+
 .bg-ic-cards {
   background-color: rgba(77, 89, 43, 0.1);
 }
@@ -195,8 +292,25 @@ body {
   background-color: var(--bg-div-dark) !important;
 }
 
+.bg-div-half {
+  background: linear-gradient(to bottom, var(--bg-div) 50%, white 50%);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.bg-div-half-img {
+  background: linear-gradient(to bottom, var(--bg-div) 50%, transparent 50%),
+    url("./assets/book/bg-image.png");
+  background-size: cover;
+  background-position: bottom;
+}
+
 .bg-icons {
   background-color: rgba(249, 249, 247, 0.12) !important;
+}
+
+.bg-icons-nogra {
+  background-color: var(--bg-icons) !important;
 }
 
 .bg-icons-imp {
@@ -213,4 +327,9 @@ body {
 
 .bg-div {
   background-color: var(--bg-div) !important;
+}
+
+/* SHADOW */
+.shadow-class {
+  box-shadow: 0px 0px 59.57px 0px rgba(0, 0, 0, 0.08);
 }

@@ -26,7 +26,7 @@
     <div class="container-fluid">
       <!-- Header  -->
       <div class="bg-header row">
-        <div class="col ms-5 my-1">
+        <div class="col-12 col-md-auto ms-md-5 my-1">
           <div class="d-inline-flex align-items-center">
             <iconify-icon
               class="text-white"
@@ -43,7 +43,7 @@
             <p class="mb-0 ms-2 whitish-txt">yummy@bistrobites</p>
           </div>
         </div>
-        <div class="col text-end me-5 my-1">
+        <div class="col-12 col-md text-md-end me-md-5 my-1">
           <a
             class="bg-icons p-1 d-inline-flex align-items-center justify-content-center text-light rounded-circle"
             href="#"
@@ -66,6 +66,7 @@
           ></a>
         </div>
       </div>
+      <!-- Header End -->
 
       <!-- Nav Bar -->
 
@@ -168,8 +169,9 @@
                 alt="food image"
                 class="responsive-hero-img"
               />
+              <!-- Card for small screen -->
               <div
-                class="position-absolute"
+                class="position-absolute d-none d-lg-block"
                 style="bottom: -10%; right: -2%; width: 26rem"
               >
                 <div class="bg-header rounded-12 p-5">
@@ -210,7 +212,50 @@
                   </div>
                 </div>
               </div>
+              <!-- Card for small screen -->
+              <div class="mt-4 d-lg-none pe-md-5">
+                <div class="bg-header rounded-12 p-4">
+                  <h5 class="card-title text-white mb-4 fw-bold">
+                    Come and visit us
+                  </h5>
+                  <div class="d-inline-flex align-items-center mb-3">
+                    <iconify-icon
+                      class="text-white"
+                      icon="line-md:phone"
+                      width="24"
+                      height="24"
+                    ></iconify-icon>
+                    <p class="mb-0 ms-3 me-md-4 me-3 whitish-txt">
+                      (414) 857-0107
+                    </p>
+                  </div>
+                  <div class="d-inline-flex align-items-center mb-3">
+                    <iconify-icon
+                      class="text-white"
+                      icon="ic:outline-mail"
+                      width="24"
+                      height="24"
+                    ></iconify-icon>
+                    <p class="mb-0 ms-3 whitish-txt">
+                      happytummy@restaurant.com
+                    </p>
+                  </div>
+                  <div class="d-inline-flex align-items-center">
+                    <iconify-icon
+                      class="text-white"
+                      icon="proicons:location"
+                      width="24"
+                      height="24"
+                    ></iconify-icon>
+                    <p class="mb-0 ms-3 whitish-txt">
+                      837 W. Marshall Lane Marshalltown, IA 50158, Los Angeles
+                    </p>
+                  </div>
+                </div>
+              </div>
             </div>
+
+            <!-- Text Section -->
             <div class="col-12 col-lg-6 px-5">
               <h1 class="playfair-display-gen fw-medium fs-55 txt-nav">
                 We provide healthy food for your family.
@@ -249,15 +294,21 @@
           <div
             class="position-absolute top-50 start-50 translate-middle text-center text-wrap w-50 px-3 px-md-5"
           >
-            <iconify-icon
-              class="txt-maroon bg-white rounded-circle p-4 p-lg-5 p-md-4 p-sm-3 mb-4"
-              width="2rem"
-              height="2rem"
-              icon="iconoir:play-solid"
-            ></iconify-icon>
-            <h1 class="playfair-display-gen fw-medium fs-55 text-white">
-              Feel the authentic & original taste from us
-            </h1>
+            <div
+              class="d-flex flex-row flex-md-column align-items-center justify-content-center gap-3"
+            >
+              <iconify-icon
+                class="txt-maroon bg-white rounded-circle p-4 p-sm-3 p-md-4 p-lg-5 mb-4"
+                width="2rem"
+                height="2rem"
+                icon="iconoir:play-solid"
+              ></iconify-icon>
+              <h1
+                class="playfair-display-gen fw-medium fs-55 fs-sm-4 fs-md-3 fs-lg-1 text-white mb-0 text-start text-md-center"
+              >
+                Feel the authentic & original taste from us
+              </h1>
+            </div>
           </div>
         </div>
 
@@ -392,7 +443,7 @@
             </h1>
           </div>
           <div
-            class="row row-cols-1 row-cols-md-3 mb-3 d-flex align-items-stretch"
+            class="row row-cols-1 row-cols-md-3 gy-4 gx-md-4 mb-3 d-flex align-items-stretch"
           >
             <div class="col d-flex">
               <div class="card mb-4 rounded py-5 px-4 bg-div h-100">
@@ -460,9 +511,9 @@
         <div class="container">
           <footer class="row">
             <!-- Col-1 -->
-            <div class="col-lg-4">
+            <div class="col-lg-4 mb-4 mb-lg-0">
               <span
-                class="d-inline-flex align-items-center justify-content-center ms-5"
+                class="d-inline-flex align-items-center justify-content-center ms-lg-5"
                 ><a class="navbar-brand me-2" href="#">
                   <img
                     src="./assets/brand-logo.png"
@@ -476,13 +527,13 @@
                   >Bistro Bliss</a
                 ></span
               >
-              <p class="ms-5 my-4 tx-footer">
+              <p class="ms-lg-5 my-4 tx-footer">
                 In the new era of technology we look a in the future with
                 certainty and pride to for our company and.
               </p>
 
               <a
-                class="ms-5 me-2 bg-maroon p-2 d-inline-flex align-items-center justify-content-center text-light rounded-circle"
+                class="ms-lg-5 me-2 bg-maroon p-2 d-inline-flex align-items-center justify-content-center text-light rounded-circle"
                 href="#"
                 ><iconify-icon icon="mdi:twitter"></iconify-icon
               ></a>
@@ -504,8 +555,8 @@
             </div>
 
             <!-- Col-2 -->
-            <div class="col-lg-2 ps-5">
-              <p class="text-white mb-5 fw-bold">Pages</p>
+            <div class="col-lg-2 ps-lg-5 mb-4 mb-lg-0">
+              <p class="text-white mb-3 mb-lg-5 fw-bold">Pages</p>
               <ul class="nav flex-column txt-greyish gap-3">
                 <li class="nav-item mb-2"><a href="./index.html">Home</a></li>
                 <li class="nav-item mb-2"><a href="./about.html">About</a></li>
@@ -520,8 +571,8 @@
             </div>
 
             <!-- Col-3 -->
-            <div class="col-lg-2">
-              <p class="text-white mb-5 fw-bold">Utility Pages</p>
+            <div class="col-lg-2 mb-4 mb-lg-0">
+              <p class="text-white mb-3 mb-lg-5 fw-bold">Utility Pages</p>
               <ul class="nav flex-column txt-greyish gap-3">
                 <li class="nav-item mb-2">Start Here</li>
                 <li class="nav-item mb-2">Styleguide</li>
@@ -536,19 +587,21 @@
             <!-- Col-4 -->
             <div class="col-lg-4">
               <div class="row gy-3 gx-2">
-                <h6 class="text-white mb-4 fw-bold">Follow Us On Instagram</h6>
+                <h6 class="text-white mb-md-4 pb-md-3 fw-bold">
+                  Follow Us On Instagram
+                </h6>
                 <div class="col-6 col-sm-4 col-md-3 col-lg-6">
                   <img
                     src="./assets/Footer-1.png"
                     alt="egg noodles"
-                    class="mt-3 rounded-12 img-fluid"
+                    class="rounded-12 img-fluid"
                   />
                 </div>
                 <div class="col-6 col-sm-4 col-md-3 col-lg-6">
                   <img
                     src="./assets/Footer-2.png"
                     alt="french fries"
-                    class="mt-3 rounded-12 img-fluid"
+                    class="rounded-12 img-fluid"
                   />
                 </div>
                 <div class="col-6 col-sm-4 col-md-3 col-lg-6">
